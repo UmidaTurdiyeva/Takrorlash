@@ -1,0 +1,42 @@
+
+		xulosalar
+
+git - kodni yani yaratilayotgan dastur kodini nazorat qilish texnologiyasi
+bunda dasturchi dasturga tegishli har bir o'zgarishni saralaydi (stage), 
+ komentariya orqali nomlaydi (commmit) va saqlash uchun lokal yoki global 
+tarmoqqa jo'natadi (git push).
+	- 
+
+
+
+
+
+
+
+.
+	-  
+
+
+
+
+
+
+github - yaratilayotgan dastur kodini onlayn ma'lumotlar ombori (cluod)da
+saqlash uchun platforma.
+______________ cloud da bo'sh proyekt yaratish :_________________
+- github.com saytiga kiramiz va registratsiyadan o'tamiz
+- repository (ombor)dan yangi (new) omborcha yaratamiz:
+	* repository name (nomi)
+	* unga qisqacha tasnif (description)
+	* loyihamiz ochiq yoki yopiq holda yaratilshi
+		public - ommaviy
+		private - xususiy
+	* README - loyihamizdan foydalanuvchilar uchun ko'rsatma belgilaymiz
+	* create repository ni bosamiz!
+
+________________cloud da yaratilgan repositoryi kompyuterga ulaymiz: _________
+
+
+
+
+EQGXZK5FH3ROFL6O

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!--      
+HTML teglarini sinab ko'rishni boshlaymiz!
+
+HTML hujjati elementlar qatoridan tashkil topadi. Elementlar o'z navbatida sahifani ma'lumotar bilan to'ldiradi. 
+<br>
+HTML elementlari quyidagi ko'rinishda bo'ladi:
+<br> -->
+
+
+<div class="header"><i>NOTEBOOK</i></div>
+<div class="container">
+    <div class="nav">     
+            <button class="tablinks" onclick="openInfo(event, 'Git')" id="defaultOpen">Git</button>
+            <button class="tablinks" onclick="openInfo(event, 'GitHub')">GitHub</button>
+            <button class="tablinks" onclick="openInfo(event, 'HTML')">HTML</button>
+        </div>
+    </div>
+
+    <div id="Git" class="information">
+        <h3 style="text-align:center ;">Git</h3>
+        <p><b>Git</b> - bu kodlarni nazorat qilish texnologiyasi bo'lib, 
+            lokal tarmoqda barcha yozilgan kodlarni saqlaydi</p>
+            <p> <b>Git</b>  texnologiyasida dasturchi yaratayotgan loyihasini 
+                bir necha versiyalarga bo'lib uni nazorat qilishi mumkin</p>
+                Endi Git texnologiyasining asosiy buyruqlarini ko'rib chiqamiz:
+                <ul>
+                    <li>git add . - o'zgarishlarni aniqlash</li>
+                    <li>git commit -m" message" - aniqlangan o'zgarishga nom berish</li>
+                    <li>git status - barcha commitlarni ko'rsatish</li>
+                    <li>git diff - </li>
+                    <li>git log - </li>
+                    <li>git reset - </li>
+                    <li>git checkout - </li>
+                    <li>git init - yaratilgan omborga (repository) kirish </li>
+                    <li>git branch - yangi filial yaratish</li>
+                    <li>git pull - </li>
+                    <li>git push - </li>
+                    <li>git restore - o'zgarishlarni bekor qilish</li>
+                    <p style="float: right; margin: 5px;"><a href="https://git-scm.com/"> qo'shimcha ma'lumotlar</a></p>
+                </ul>
+    </div>
+    <div id="GitHub" class="information">
+        <h3>GitHub</h3>
+        <p> <b>GitHub</b> - bu yozilgan kodlarni onlayn ma'lumotlar omborida ya'ni
+             cloud da saqlash imkonini beruvchi plarforma</p>
+             <p><b>GitHub</b>  yordamida bir necha dasturchi bir loyiha ustida bir vaqtda  ishlashi mumkin.</p>
+    </div>
+    <div id="HTML" class="information">
+        <h3>HTML</h3>
+        <p>1.	Html – bu …
+            <br>
+            Veb sahifalarni yaratish uchun ishlatiladigan standart gipermatnli belgilash tili
+            <br>
+            2.	Html bu ..
+            <br>
+            Veb sahifaning strukturasini tasvirlovchi hujjat
+            <br>
+            HTML elementlar qatoridan iborat
+            <br>
+            HTML elementlari yordamida brouzerga kotentlarni hohlaganimizday joylashtira olamiz
+            <br>
+             HTML elementlari yordamida veb sahifadagi ma’lumotlarni ifodalashimiz mumkin, masalan, bu sarlavha (head), bu paragraph (p), bu rasm (img), va hakozo.
+             <br>
+            HTML elementining o’zi quyidagi ko’rinishda bo’ladi:
+            <p><code><</code> boshlovchi teg> content  <code><</code>/yakunlovchi teg></p>
+             
+           
+            Elementlar ochiq yoki yopiq, toq yoki juft bo’lishi mumkin:
+            <br>
+            <span><</span>br>,<span><</span> hr> va …
+            <br>
+            HTML hujjatlarining barchasi <!DOCTYPE > gekloratsiyasidan boshlanishi kerak
+            <br>
+            <!DOCTYPE> HTML tegi hisoblanmaydi
+            <br>
+            U brauzer uchun ma’lumot bo’lib, u hujjatning tipi bildiradi
+            </p>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="information">ma'lumot</div> -->
+    <div class="dictionary">lug'at
+        <p>repository - ombor</p>
+        <p>discription - tavsif</p>
+        <p>public - ommaviy</p>
+        <p>private - xususiy</p>
+    </div>
+</div>
+
+<div class="footer">qo'shimcha ma'lumotlar</div>
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.fon {
+    background-color: white;
+    width: 75vw;
+    margin: 5px auto;
+}
+.container, .container1, .container2, .container3, .container4{
+    border-start-start-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 74vw;
+    height: 85vh;
+    padding: 15px;
+    margin: 2px auto;
+
+}
+.container {
+    padding: 40px;
+    background-image: linear-gradient( hwb(218 42% 51%),  hwb(217 70% 15%), hwb(218 42% 51%));
+    text-align: center;
+    color: white;
+
+}
+.container1 {
+    background-image: url("./imgs/2023.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+    color: white;
+    font-style: italic;
+    position: relative;    /* tugma uchun*/
+    display: flex;    /* .bir classni o'rtaga joylashtirish*/
+    justify-content: center; /* .bir classni o'rtaga joylashtirish*/
+    /* align-items: center; */ /* logo bilan yozuv bir qatorga tushib qolyapti*/
+    /* bir classni o'rtaga joylashtirish*/
+
+}
+
+.container1 span img {
+    border-radius: 50%;
+    width: 40px;
+    font-size: 20px;
+    
+}
+
+.container1 span i {
+    color: white;
+    position: absolute;    /* logo*/
+    top: 15px;    /* logo*/
+    left: 15px;    /* logo*/
+}
+
+
+.container button{
+    padding: 5px 15px;
+    border: solid 1px white;
+    background-color: hwb(218 42% 51%);
+    /* background-color: #53688a; */
+    border-radius: 5px;
+    color: white;
+}
+
+
+.bir {
+    width: 50vw;
+    height: 65vh;
+    margin: auto;
+    color: #785037;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 10px rgb(201, 189, 189), 0 0 25px #637A9F, 0 0 5px #53688a;
+    font-size: 25px;
+    background-image: linear-gradient(to left,  #785037, rgb(241, 235, 224), #785037);
+    opacity: 0.7;
+    border-radius: 15px;
+    text-align: center;  /* yozuv markazdanligi*/
+}
+
+
+.bir b {
+    font-size: 40px;
+}
+
+.container1 button {
+    padding: 5px 15px;
+    border: solid 1px white;
+    background-color: hwb(218 42% 51%);
+    border-radius: 5px;
+    position: absolute;    /* bog'lanish tugmani joylashuvi */
+    bottom: 10px;    /* tugmani joylashuvi */
+    right: 40px;
+    color: white;
+}
+
+
+.container2{
+    border: 5px solid #f8f6f1;
+    font-family: sans-serif;
+    text-align: center;
+    color: #785037;
+
+
+}
+
+.con{
+   display: flex;
+   justify-content: center;
+}
+
+.responsive{
+    float: left;
+    width: 21.99999%;
+    background-color: #f8f6f1;
+    margin: 25px;
+    font-size: 12px;
+}
+.gall{
+    
+    padding: 0 4px;
+    /* border: 1px solid rgb(235, 230, 230); */
+}
+.gall img{
+    width: 100%;
+    height: auto;
+} 
+.desc{
+    padding: 15px;
+    text-align: center;
+}
+.container3{
+    background-image: url("./imgs/ivan-antonov-3var.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: wheat;
+    text-align: center;
+    padding: 100px;
+    font-size: 12px;
+}
+.container3 button{
+    background-color: rgb(237, 232, 223);
+    color: blue;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: none;
+}
+.container4{
+    background-color: #f8f6f1;
+    padding: 20px;
+}
+
+.container4 div{
+    display: inline-block;
+    width: 400px;
+    padding: 15px;
+    /* border: 1px solid black; */
+    font-size: 10px;
+}
+
+
+.container4 div img{
+    width: 300px;
+    margin: 10px;
+}
