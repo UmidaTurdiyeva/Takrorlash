@@ -181,9 +181,45 @@
     /* border: 1px solid black; */
     font-size: 10px;
 }
-.container6 div{
-    display: inline-block;
-    width: 50%;
+.container6 div button{
+    padding: 10px;
+    border: 1px solid #f8f6f1;
+    margin: 5px;
 }
-/* .container6 div img{
+.container6 div{
+    color: white;
+    display: inline-block;
+    width: 49%;
+    height: 400px;
+    /* border:  solid 1px black; */
+}
+.container6 div img{
+    width: 100%;
+}
+.container6 span img {
+    border-radius: 50%;
+    width: 40px;
+    font-size: 20px;
+    
+}
+
+.container6 span i {
+    color: white;
+    position: absolute;    /* logo*/
+    top: 15px;    /* logo*/
+    left: 15px;    /* logo*/
+}
+.container6{
+    /* border: 1px solid black; */
+    font-size: 12px;
+}
+.container6 span img{
+    background-color: white;
+    width:20px;
+    margin: 3px;
+}
+/* .teams{
+    background-image: url("./imgs/teams.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 } */
