@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,58 +9,368 @@
     <link rel="stylesheet" href="./table.css">
     <title>Table</title>
 </head>
-<body>
-    <table>
-        <tr class="toq" >
-            <th><a href="#">Tartib raqam</a></th>
-            <th>Yechimi</th>
-            <th>Nom</th>
-            <th style="color: #3490dc;">Qiyinchiligi</th>
-            <th>Toifasi</th>
-            <th><i class="fa fa-star checked" style="color: #dda601;"></th>
-            <th><i class="fa fa-user" style="color: #3490dc;"></i></th>
-            <th><i class='fa fa-check-square' style="color: #3490dc;"></i></th>
-            <th><i class="fa fa-try" style="color: #3490dc;"></i></th>
-            <th><i class="fa fa-percent" style="color: #3490dc;"></i></th>
-        </tr>
-        <tr>
-            <td class="tartibi"><a href="#">001</a></td>
-            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
-            <td class="nomi"><a href="#">A+B</a></td>
-            <td class="qiyinchiligi">1%</td>
-            <td class="toifasi"><a href="#">Oson</a></td>
-            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
-            <td class="odamcha">29230</td>
-            <td class="kvadrat">67364</td>
-            <td class="urinish">177061</td>
-            <td class="foiz">38.1</td>
-        </tr>
-        <tr class="toq">
-            <td class="tartibi"><a href="#">002</a></td>
-            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
-            <td class="nomi"><a href="#">Katta-kichik</a></td>
-            <td class="qiyinchiligi">3%</td>
-            <td class="toifasi"><a href="#">Oson</a></td>
-            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
-            <td class="odamcha">29230</td>
-            <td class="kvadrat">67364</td>
-            <td class="urinish">177061</td>
-            <td class="foiz">38.1</td>
-        </tr>
-        <tr>
-            <td class="tartibi"><a href="#">003</a></td>
-            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
-            <td class="nomi"><a href="#">A+B</a></td>
-            <td class="qiyinchiligi">2%</td>
-            <td class="toifasi"><a href="#">Oson</a></td>
-            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.4</b></td>
-            <td class="odamcha">29230</td>
-            <td class="kvadrat">66878</td>
-            <td class="urinish">67061</td>
-            <td class="foiz">43.4</td>
-        </tr>
 
-    </table>
-    
+<body>
+
+    <div class="container">
+        <div class="navblock">
+            <ol style="display: flex;">
+                <li>
+                    <a href="https://robocotest.uz"> Bosh sahifa</a>
+                </li>
+                <li>
+                    / Masalalar
+                </li>
+            </ol>
+        </div>
+        <div style="display: flex;">
+            <div class="forma">
+                <div class="sidebar">
+                    <section>
+                        <span>
+                            <i class="fa fa-bars"></i>
+                            <h4 class="robocontest">RoboContest</h4>
+                        </span>
+                    </section>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-user"></i>Foydalanuvchilar</a>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Masalalar</a>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Urinishlar</a>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>OLimpiyadalar</a>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Testlar</a>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Kurslar</a>
+                </div>
+                <div class="menyu">
+                    <a href="https://robocontest.uz/blok"> <i class="fa fa-check-square"></i>Bloglar</a>
+                </div>
+                <div class="menyu">
+                    <a href="https://robocontest.uz/system"> <i class="fa fa-check-square"></i>Tizimda ishlash</a>
+                </div>
+                <hr>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Bizning jamoa</a>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Telegram kanalimiz</a>
+                </div>
+                <hr>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Kirish</a>
+                </div>
+                <div class="menyu">
+                    <a href="#"> <i class="fa fa-check-square"></i>Ro'yxatdan o'tish</a>
+                </div>
+            </div>
+            <div class="jadval">
+                <div class="izlash">
+                    <input type="text" value="Izlash">
+                    <select name="toifalar" id="masalaQiyinligi">
+                        <option value="qiymat">Barcha toifalar</option>
+                        <option value="Oson">Oson</option>
+                        <option value="Katta-kichik">Katta-kichik</option>
+                        <option value="Uzun sonlar arifmetikasi">Uzun sonlar arifmetikasi</option>
+                        <option value="Ko'paytma">Ko'paytma</option>
+                    </select>
+                    <button><i class="fas fa-search">Izlash</i> </button>
+                </div>
+                <div class="kitob_yuklash"><button>Masalalar kitobini yuklab olish</button></div>
+
+
+                <br>
+
+                <div>
+
+
+                    <table>
+                        <tr class="toq">
+                            <th><a href="#">Tartib raqam</a></th>
+                            <th>Yechimi</th>
+                            <th>Nom</th>
+                            <th style="color: #3490dc;">Qiyinchiligi</th>
+                            <th>Toifasi</th>
+                            <th><i class="fa fa-star checked" style="color: #dda601;"></th>
+                            <th><i class="fa fa-user" style="color: #3490dc;"></i></th>
+                            <th><i class='fa fa-check-square' style="color: #3490dc;"></i></th>
+                            <th><i class="fa fa-try" style="color: #3490dc;"></i></th>
+                            <th><i class="fa fa-percent" style="color: #3490dc;"></i></th>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">001</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">A+B</a></td>
+                            <td class="qiyinchiligi">1%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">002</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Katta-kichik</a></td>
+                            <td class="qiyinchiligi">3%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">003</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">A+B</a></td>
+                            <td class="qiyinchiligi">35%</td>
+                            <td class="toifasi"><a href="#">Uzun sonlar arifmetikasi</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">004</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Direktor tashrifi</a></td>
+                            <td class="qiyinchiligi">2%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">005</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Ko'paytma</a></td>
+                            <td class="qiyinchiligi">15%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">006</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Dasturchilar kuni</a></td>
+                            <td class="qiyinchiligi">13%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">007</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Bayroq</a></td>
+                            <td class="qiyinchiligi">15%</td>
+                            <td class="toifasi"><a href="#">Dinamik dasturlash</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">008</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Minimum va maksimum yig'indisi</a></td>
+                            <td class="qiyinchiligi">5%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">009</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Yolg'iz son</a></td>
+                            <td class="qiyinchiligi">10%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">010</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Yangi yil sovg'asi</a></td>
+                            <td class="qiyinchiligi">3%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">011</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">2-max</a></td>
+                            <td class="qiyinchiligi">7%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">012</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">O'yin</a></td>
+                            <td class="qiyinchiligi">20%</td>
+                            <td class="toifasi"><a href="#">Sonlar nazariyasi</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">013</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Virus 1</a></td>
+                            <td class="qiyinchiligi">3%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">014</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Virus 2</a></td>
+                            <td class="qiyinchiligi">15%</td>
+                            <td class="toifasi"><a href="#">Sonlar nazariyasi</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">015</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Virus 3</a></td>
+                            <td class="qiyinchiligi">20%</td>
+                            <td class="toifasi"><a href="#">Sonlar nazariyasi</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">016</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Natural son</a></td>
+                            <td class="qiyinchiligi">30%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">017</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">G'aroyib son</a></td>
+                            <td class="qiyinchiligi">20%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">018</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Sehrli kvadrat</a></td>
+                            <td class="qiyinchiligi">15%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+                        <tr>
+                            <td class="tartibi"><a href="#">019</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Niqob - 1</a></td>
+                            <td class="qiyinchiligi">35%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.8</b></td>
+                            <td class="odamcha">16499</td>
+                            <td class="kvadrat">27226</td>
+                            <td class="urinish">71803</td>
+                            <td class="foiz">37.9</td>
+                        </tr>
+                        <tr class="toq">
+                            <td class="tartibi"><a href="#">020</a></td>
+                            <td class="yechimi"><i class="fa fa-play-circle"></i></td>
+                            <td class="nomi"><a href="#">Niqob -2</a></td>
+                            <td class="qiyinchiligi">3%</td>
+                            <td class="toifasi"><a href="#">Oson</a></td>
+                            <td class="yulduzcha"><i class="fa fa-star checked"></i><b>3.6</b></td>
+                            <td class="odamcha">29230</td>
+                            <td class="kvadrat">67364</td>
+                            <td class="urinish">177061</td>
+                            <td class="foiz">38.1</td>
+                        </tr>
+
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
