@@ -1,0 +1,38 @@
+
+table, th, td{
+    border: 1px solid black;
+    /* color: #338fda; */
+    border-collapse: collapse;
+    font-size: 14.4px;
+    font-family: sans-serif;
+    padding: 8px;
+}
+
+table tr td a, table tr th a{
+    text-decoration: none;
+    color: #3490dc;
+}
+.toq{
+    background-color: #f2f5f7;
+}
+.tartibi, .toifasi{
+    color: #3490dc;
+}
+.yechimi{
+    color: #3490dc;
+    text-align: center;
+}
+.nomi{
+    color: #3490dc;
+    padding: 8px;
+}
+.qiyinchiligi, .yulduzcha, .odamcha, .kvadrat, .urinish, .foiz{
+    text-align: center;
+}
+.yulduzcha{
+    color: #dda601;
+}
+.yulduzcha b{
+    color: black;
+}
+
