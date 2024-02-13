@@ -1,0 +1,37 @@
+
+
+.anketa{
+    width: 80vw;
+    height: 100vh;
+    border: 1px solid blue;
+    margin: 10px auto;
+    padding: 8px;
+}
+header{
+    position: fixed;
+    width: 80vw;
+    background-color: blue;
+    color: aliceblue;
+    padding: 4px 8px;
+    text-align: center;
+    margin: 0px auto;
+    border: 1px solid blue;
+}
+
+.shaxsiy{
+    width: 30vw;
+
+
+}
+.shaxsiy input{
+    margin: 10px;
+    padding: 4px;
+}
+.shaxsiy div{
+    display: inline;
+}
+.shaxsiy .foto{
+    width: 40%;
+    height: 40%;
+    border: 2px solid black;
+}
