@@ -3,19 +3,18 @@
 .anketa{
     width: 80vw;
     height: 100vh;
-    border: 1px solid blue;
-    margin: 10px auto;
-    padding: 8px;
+    border: 1px solid #7272e7;
+    margin: 0px auto;
+    padding: 10px;
 }
 header{
-    position: fixed;
     width: 80vw;
-    background-color: blue;
+    background-color: #7272e7;
     color: aliceblue;
     padding: 4px 8px;
     text-align: center;
     margin: 0px auto;
-    border: 1px solid blue;
+    border: 1px solid #7272e7;
 }
 
 .shaxsiy{
@@ -30,8 +29,7 @@ header{
 .shaxsiy div{
     display: inline;
 }
-.shaxsiy .foto{
-    width: 40%;
-    height: 40%;
+.shaxsiy .foto{ 
+    width: 50%;
     border: 2px solid black;
 }

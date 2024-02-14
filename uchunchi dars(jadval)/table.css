@@ -46,7 +46,7 @@ table tr td a, table tr th a{
     margin: 16px auto;
     padding: 0px 15px;
     width: 1140px;
-    height: 1301.56;
+    height: fit-content;
     /* border: 2px solid black; */
 }
 .navblock{
@@ -64,7 +64,9 @@ table tr td a, table tr th a{
 }
 .robocontest{
     display: inline;
+
 }
+
 .menyu a{
     text-decoration: none;
     color: #2874a6;
@@ -73,9 +75,12 @@ table tr td a, table tr th a{
 }
 .forma{
     width: 15%;
+    height: fit-content;
     background-color: #f3f5f6;
      /* border: 1px solid black; */
      padding: 15px;
+     position: sticky; /*--------------------------------------------------------------------*/
+     top: 10;
 }
 .forma .menyu{
     padding: 8px;
