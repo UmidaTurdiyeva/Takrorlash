@@ -1,0 +1,109 @@
+
+
+.body{
+    width: 80vw;
+    margin: 0px auto;
+    /* border: 1px solid black; */
+    border: 10px solid red;
+    height: fit-content;
+}
+
+.body1{
+    border: 10px solid black;
+    width: 60vw;
+    margin: 0px auto;
+    
+}
+.navbar{
+    width: 50vw;
+    margin: auto;
+    /* border: 2px solid #73AD21; */
+    height: 70px;
+    border-bottom: 3px solid white;
+}
+
+
+.navbar a{
+    float: right;
+    padding: 18px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.navbar img{
+    float: left;
+    border-radius: 50px;
+    width: 100px;
+    margin: 18px 20px;
+}
+.back-gr-img{
+    height: 400px;
+    background-image: url("./img/desktop-wallpaper-background-for-hospital-website-tip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.text{
+    margin: 100px;
+    color: white;
+}
+.doctors {
+    border-bottom: 3px solid gray;
+    height: 400px;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    padding: 10px;
+
+}
+.doctors h4, h5{
+    color: gray;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.box1{
+    width: 28%;
+    margin: 20px 10px;
+}
+.box .box1 img{
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.position-relative{
+    position: relative;
+    left: 100px;
+    background-color: aqua;
+    border: 3px solid #73AD21;
+    height: 500px;
+    width: 500px;
+}
+.position-fixed{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    background-color: #73AD21;
+}
