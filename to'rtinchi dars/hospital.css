@@ -4,15 +4,16 @@
     width: 80vw;
     margin: 0px auto;
     /* border: 1px solid black; */
-    border: 10px solid red;
+    /* border: 10px solid red; */
     height: fit-content;
 }
 
 .body1{
-    border: 10px solid black;
+    /* border: 10px solid black; */
     width: 60vw;
     margin: 0px auto;
-    
+    background-color: white;
+
 }
 .navbar{
     width: 50vw;
@@ -50,13 +51,12 @@
     color: white;
 }
 .doctors {
-    border-bottom: 3px solid gray;
-    height: 400px;
     text-align: center;
+    border-bottom: 3px solid #4fa5c6;
+    height: 400px;
     width: 50vw;
     margin: auto;
     padding: 10px;
-
 }
 .doctors h4, h5{
     color: gray;
@@ -74,18 +74,120 @@
     width: 150px;
 }
 
+.our-vision{
+    border-bottom: 3px solid #4fa5c6;
+    height: 400px;
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+}
+.img-vision{
+    width: 40%;
+}
+.text-vision{
+    width: 50%;
+    margin: 20px 10px;
+}
 
+.img-vision img{
+    width: 250px;
+    margin: auto 10px;
+}
+.text-vision span{
+    color: #4fa5c6;
+    font-size: 1.3rem;
+}
+.text-vision h4{
+    text-align: center;
+    font-family: sans-serif;
+}
+.text-vision button{
+    border: 2px solid #4fa5c6;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #4fa5c6;
+    background-color: white;
+}
+.operation{
+    border-bottom: 3px solid #4fa5c6;
+    height: 400px;
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.operation span{
+    color: #4fa5c6;
+}
+.operation p{
+    color: gray;
+}
+.operation-box{
+    display: flex;
+    justify-content: space-around;
+    padding: 1px;
+    margin: 0px 2px;
+}
+.operation-img{
+    width: 23%;
+    /* margin: 3px; */
+}
+.operation .operation-box .operation-img img{
+    width: 150px;
+    height: 150px;
+}
+.client{
+    height: 200px;
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: gray; 
+}
+.client span{
+    color: #4fa5c6;
+}
+.client .accordion{
+    margin: 2px auto;
+    width: 300px;
+    border-top: 2px solid #b7b7b7;
+}
+footer{
+    height: 400px;
+    width: 60vw;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+    background-image: url("./img/desktop-wallpaper-background-for-hospital-website-tip.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+.block{
+    width: 23%;
+}
+.block img{
+    border-radius: 50px;
+    width: 100px;
+    margin: 18px 20px;
+}
+.block h5, h3{
+    color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
+.end{
+    box-sizing: border-box;
+    width: 60vw;
+    height: 50px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
