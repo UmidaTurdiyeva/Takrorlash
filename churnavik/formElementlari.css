@@ -1,0 +1,62 @@
+
+
+.container{
+    width: 80vw;
+    height: fit-content;
+    margin: 0 auto;
+    border: 1px solid red;
+    background-color: salmon;
+}
+.container h1{
+    text-align: center;
+
+}
+
+.form1, .form2, .form4, .form5, .form6, .form7, .form8{
+    width: 49%;
+    margin: 1px;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form1:hover, .form2:hover, .form4:hover, .form5:hover, .form6:hover{
+    z-index: 1;
+    width: 80%;
+    font-size: 25px;
+}
+.form1{
+    border: 3px solid blueviolet;
+    background-color: aliceblue;
+}
+.form2{
+    margin-top: 50px;
+    margin-right: 50px;
+    border: 2px solid gold;
+    background-color: cyan;
+}
+.form4{
+    margin-left: 50px;
+    margin-top: 30px;
+    border: 2px solid red;
+    background-color: thistle;
+}
+.form5{
+    margin-top: 20px;
+    border: 2px solid olivedrab;
+    background-color: aliceblue;
+}
+.form6{
+    margin-top: 10px;
+    margin-left: 300px;
+    border: 2px solid darkblue;
+    background-color: rgb(198, 216, 249);
+}
+.form7{
+    border: 2px solid salmon;
+}
+.form8{
+    border: 2px solid chartreuse;
+    
+}
+

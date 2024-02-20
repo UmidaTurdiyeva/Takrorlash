@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./inputTypes.css">
+    <title>input types</title>
+</head>
+
+<body>
+
+    <div class="container" style="display: flex;">
+
+        <div class="sidenav">
+            <button class="tablinks" onclick="openInfo(event, 'text')" id="defaultOpen"> input type="text"</button>
+            <button class="tablinks" onclick="openInfo(event, 'submit')">type="submit" </button>
+            <button class="tablinks" onclick="openInfo(event, 'email')">type="email" </button>
+            <button class="tablinks" onclick="openInfo(event, 'password')"> type="password"</button>
+            <button class="tablinks" onclick="openInfo(event, 'radio')"> type="radio"</button>
+            <button class="tablinks" onclick="openInfo(event, 'checkbox')"> type="checkbox" </button>
+            <button class="tablinks" onclick="openInfo(event, 'tel')">type="tel" </button>
+            <button class="tablinks" onclick="openInfo(event, 'number')">type="number" </button>
+            <button class="tablinks" onclick="openInfo(event, 'date')">type="date" </button>
+            <button class="tablinks" onclick="openInfo(event, 'datetime-local')">type="datetime-local" </button>
+            <button class="tablinks" onclick="openInfo(event, 'file')">type="file" </button>
+            <button class="tablinks" onclick="openInfo(event, 'others')">va boshqalar </button>
+        </div>
+
+        <!-- text -->
+
+        <div id="text" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p> &lt;label <b>for="name"</b> &gt; Ism : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" <b>id="name"</b> &gt; </p>
+                    <br>
+                    <p> &lt;label <b>for="surname"</b> &gt; Familiya : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" <b>id="surname"</b> &gt; </p>
+                    <br>
+                    <br>
+                    label elementining <b>for</b> atributi bilan input elimentining <b>id</b> atributi qiymatlari bir
+                    xil bo'lishi shart!
+                    Shundagina ism "yorlig'i" inputga tegishli ekanligini bildiradi.
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <label for="name"> Ism : &nbsp;</label>
+                    <input type="text" id="name">
+                    <br><br>
+                    <label for="surname"> Familiya : &nbsp;</label>
+                    <input type="text" id="surname">
+                </div>
+            </div>
+        </div>
+
+        <!-- submit -->
+
+        <div id="submit" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p>&lt; form action="url manzil" &gt;</p>
+                    <p> &lt;label for="name" &gt; Ism : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="name" &gt; </p>
+                    <br>
+                    <p> &lt;label for="surname" &gt; Familiya : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="surname"</b> &gt; </p>
+                    <p>&lt; input <b> type="submit" </b> value=" Jo'natish"</p>
+                    <p>&lt; input <b> type="reset" </b> value="Qayta yuklash"</p>
+                    <p> &lt;/form &gt;</p>
+                </div>
+                <div class="info2">
+
+                    <h2>Natija:</h2>
+                    <label for="name"> Ism : &nbsp;</label>
+                    <input type="text" id="name">
+                    <br>
+                    <label for="surname"> Familiya : &nbsp;</label>
+                    <input type="text" id="surname">
+                    <br>
+                    <input type="submit" value="Jo'natish">
+                    <br>
+                    <input type="reset" value="Reset">
+                    <p> Form tegini ichida yozilgan <b>action</b> atributida ko'rsatilgan server
+                        manziliga formada to'dirilgan ma'lumotlarni <b>jo'natadigan</b> input tipi.</p>
+                        <p>type="reset" formada to'ldirilgan ma'lumotlarni barchasini "tashlab yuborib"
+                           <b> qayta to'ldirish</b> uchun "bo'shatadi".
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- password -->
+
+        <div id="password" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p> &lt;label for="username" &gt; Username : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="username" &gt; </p>
+                    <br>
+                    <p> &lt;label for="Parol" &gt; Parol : &lt;/label &gt; </p>
+                    <p> &lt; input <b>type="password"</b> id="parol" &gt; </p>
+                    <br>
+                    <br>
+                    <p> Ushbu input tipi parol (password) kiritish uchun mo'ljallangan bo'lib,
+                        inputga kiritilgan parol ko'rinmaydi va u nuqta shaklida ko'rinadi.</p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <label for="username"> Username : &nbsp;</label>
+                    <input type="text" id="username">
+                    <br><br>
+                    <label for="parol"> Parol : &nbsp;</label>
+                    <input type="password" id="parol">
+                </div>
+            </div>
+        </div>
+
+        <!-- radio -->
+
+        <div id="radio" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p> &lt; input type="radio" id="html" <b>name="for_lang"</b> &gt; </p>
+                    <p> &lt;label for="html" &gt; html &lt;/label &gt; </p>
+                    <br>
+                    <p> &lt; input type="radio" id="css" <b>name="for_lang"</b> &gt; </p>
+                    <p> &lt;label for="css" &gt; CSS &lt;/label &gt; </p>
+                    <br>
+                    <p> &lt; input type="radio" id="js" <b>name="for_lang"</b> &gt; </p>
+                    <p> &lt;label for="js" &gt; JS &lt;/label &gt; </p>
+                    <br>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <br>
+                    <input type="radio" name="fav_lang" id="html">
+                    <label for="html">HTML </label>
+                    <br>
+                    <input type="radio" name="fav_lang" id="css">
+                    <label for="css">CSS</label>
+                    <br>
+                    <input type="radio" name="fav_lang" id="js">
+                    <label for="js">JS</label>
+                    <br><br>
+                    <p>Har uchala elementning name atributi (name="for_lang") qiymatlari bir xil bo'lishi kerak.
+                        Bu uchla variantdan faqat bittasini tanlash imkonini beradi. </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- checkbox -->
+
+
+        <div id="checkbox" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p> &lt; input type="checkbox" id="ing" &gt; </p>
+                    <p> &lt;label for="ing" &gt; ingliz tili &lt;/label &gt; </p>
+                    <p> &lt; input type="checkbox" id="rus" &gt; </p>
+                    <p> &lt;label for="rur" &gt; rus tili &lt;/label &gt; </p>
+                    <p> &lt; input type="checkbox" id="nemis" &gt; </p>
+                    <p> &lt;label for="nemis" &gt; nemis tili &lt;/label &gt; </p>
+                    <p> &lt; input type="checkbox" id="xitoy" &gt; </p>
+                    <p> &lt;label for="xitoy" &gt; xitoy tili &lt;/label &gt; </p>
+                    <br>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <br>
+                    <p>horijiy tillardan qaysilarini bilasiz?</p>
+                    <input type="checkbox" id="ing">
+                    <label for="ing">ingliz tili </label>
+                    <br>
+                    <input type="checkbox" id="rus">
+                    <label for="rus">rus tili</label>
+                    <br>
+                    <input type="checkbox" id="nemis">
+                    <label for="nemis">nemis tili</label>
+                    <br>
+                    <input type="checkbox" id="xitoy">
+                    <label for="xitoy">xitoy tili</label>
+                    <br><br>
+                    <p>Bir vaqtda bir nechta variantni tanlash imkonini beradi.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- email -->
+
+        <div id="email" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label <b>for="email"</b> &gt; Email : &lt;/label &gt; </p>
+                    <p> &lt; input type="email" <b>id="email"</b> &gt; </p>
+                    <br>
+                    <p>email manzilni kiritish uchun ishlatiladigan input tipi</p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <label for="email"> Elektron pochta : &nbsp;</label>
+                    <input type="email" id="email">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- tel -->
+
+        <div id="tel" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label <b>for="tel"</b> &gt; Telefon : &lt;/label &gt; </p>
+                    <p> &lt; input type="tel" <b>id="tel"</b> &gt; </p>
+                    <br>
+                    <p>Telefon raqamini kiritish uchun ishlatiladigan input tipi</p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <label for="tel"> Telefon : &nbsp;</label>
+                    <input type="tel" id="tel">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- number -->
+
+        <div id="number" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label for="number" &gt; ikki xonali son kiriting : &lt;/label &gt; </p>
+                    <p> &lt; input type="number" id="number" <b>min="10" max="99"</b> &gt; </p>
+                    <br>
+                    <p>Raqam kiritish uchun ishlatiladigan input tipi.
+                        <b>min</b> va <b>max</b> atributlari yordamida chegara o'rnatish mumkin.
+                    </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form action="/action_page.php">
+                        <label for="number"> ikki xonali son kiriting: &nbsp;</label>
+                        <input type="number" id="number" min="10" max="99">
+                        <br>
+                        <br>
+                        <input type="submit" value="Jo'natish">
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- date -->
+
+        <div id="date" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label for="date" &gt; Sana : &lt;/label &gt; </p>
+                    <p> &lt; <b>input type="date" </b> id="date" &gt; </p>
+                    <br>
+                    <p>Sana kiritish uchun ishlatiladigan input tipi.
+                    </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form action="/action_page.php">
+                        <label for="date"> Sana: &nbsp;</label>
+                        <input type="date" id="date">
+                        <br>
+                        <br>
+                        <input type="submit" value="Jo'natish">
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- datetime-local -->
+
+        <div id="datetime-local" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label for="sana" &gt; Sana : &lt;/label &gt; </p>
+                    <p> &lt; <b>input type="datetime-local" </b> id="sana" &gt; </p>
+                    <br>
+                    <p>Sana va vaqti kiritish uchun ishlatiladigan input tipi.
+                    </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form action="/action_page.php">
+                        <label for="sana"> Sana: &nbsp;</label>
+                        <input type="datetime-local" id="sana">
+                        <br>
+                        <br>
+                        <input type="submit" value="Jo'natish">
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- file-->
+
+        <div id="file" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label for="myFile" &gt; faylni tanlang : &lt;/label &gt; </p>
+                    <p> &lt; <b>input type="file"</b> id="myFile" &gt; </p>
+                    <br>
+                    <p>Fayllarni tanlash va o'sha tanlangan fayllarni yuklash uchun input yaratadi. </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form action="/action_page.php">
+                        <label for="myFile"> fayni tanlang: &nbsp;</label>
+                        <input type="file" id="myFile">
+                        <br>
+                        <br>
+                        <input type="submit" value="Jo'natish">
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- others-->
+
+        <div id="others" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <!-- <p> &lt;label for="myFile" &gt; faylni tanlang : &lt;/label &gt; </p> -->
+                    <p> &lt; <b>input type="color"</b>  &gt; </p>
+                    <p> &lt; <b>input type="image"</b> alt="Submit" width="48" height="48" &gt; </p>
+                    <br>
+                    <p>rang tanlash hamda rasmli jo'natish tugmasi </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form action="/action_page.php">
+                        <label for="myColor"> rang tanlang: &nbsp;</label>
+                        <input type="color" id="myColor">
+                        <br>
+                        <!-- <label for="myImage"> rasm tanlang: &nbsp;</label>
+                        <br> -->
+                        <input type="image" src="./imgs/yuborish.PNG" alt="Submit" width="48" height="48">
+                        <br>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script>
+        function openInfo(evt, info) {
+            let i, information, tablinks;
+
+            information = document.getElementsByClassName("information");
+            for (i = 0; i < information.length; i++) {
+                information[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(info).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+</body>
+
+</html>

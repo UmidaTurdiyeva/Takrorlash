@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formAtribut.css">
+    <title>Forma Atributlari</title>
+</head>
+<body>
+
+    <div class="box">
+        <h3 style="text-align: center;"> <b>Action</b> (harakat) atributi</h3>
+        <p><a href="">Action</a> atributi forma jo'natilganda (submit qilinganda) 
+              ma'lumotlar borishi kerak bo'lgan  server manzili (url) yoziladi.</p><br>
+              &lt; form action="/action_page.php" &gt;
+              <br>
+    </div>
+
+    <div class="box" style="border: 3px solid red ; float: right;text-align: center;">
+        <h3 style="text-align: center;"> <b>Target</b>(maqsad) atributi</h3>
+        <p><a href="">Target</a>  atributi  forma jo'natilgandan  so'ng olingan 
+            javobni qayerda  ko'rsatilishi kerak ekanligini bildiradi. </p>
+              <br>
+              <table>
+                <tr>
+                    <th>value</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>_blank</td>
+                    <td>Javob boshqa yangi sahifada paydo bo'ladi.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b> &lt;form  action="url manzil" target="_blank"&gt; </b></td>
+                </tr>
+                <tr>
+                    <td>_self</td>
+                    <td>Javob hozirgi oynada paydo bo'ladi.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <b>&lt; form action="url manzil" target="_self" &gt;</b></td>
+                </tr>
+                <tr>
+                    <td>_parent</td>
+                    <td>Javob dastlabki oynada paydo bo'ladi.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b> &lt;form action="url manzil" target="_parent"&gt;</b></td>
+                </tr>
+                <tr>
+                    <td>_top</td>
+                    <td>Javob to'liq oynada paydo bo'ladi.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <b> &lt;form action="url manzil" target="_top"&gt;</b> </td>
+                </tr>
+                <tr>
+                    <td>framename</td>
+                    <td>Javob iframe elementi ichida bo'ladi.</td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <b>&lt; form action="url manzil" target="framename"&gt; </b></td>
+                </tr>
+              </table>
+    </div>
+
+    <div class="box">
+        <h3 style="text-align: center;">Metod atributi</h3>
+        <p>Metod atributi jo'natish tugmasi bosilgandan so'ng shu forma <span style="color: blue;" title="
+Gipermatnni uzatish protokoli (HTTP) mijozlar va serverlar o'rtasidagi 
+aloqani ta'minlash uchun mo'ljallangan.
+HTTP mijoz va server o'rtasida so'rov-javob protokoli sifatida ishlaydi.
+Misol: mijoz (brauzer) serverga HTTP so'rovini yuboradi;
+keyin server mijozga javob qaytaradi. Javob so'rovning holati haqidagi 
+ma'lumotlarni o'z ichiga oladi va so'ralgan tarkibni ham o'z ichiga olishi mumkin.">HTTP</span>   ga qaysi metod orqali ma'lumot jo'natilishini ko'rsatadi.</p>
+        <p>Bu metodlar 2 xil: </p>
+        <ul style="text-align: left;">
+            <li><h2><a href="https://www.w3schools.com/tags/ref_httpmethods.asp">get metodi</a> </h2></li>
+            <dd>GET ma'lum bir manbadan ma'lumotlarni so'rash uchun ishlatiladi.</dd>
+            <dd>GET so'rovlari hech qachon nozik ma'lumotlar bilan ishlashda ishlatilmasligi kerak.</dd>
+            <dd>GET so'rovlarida uzunlik cheklovlari mavjud. (2048 ta belgi)</dd>
+            <dd>Запросы GET используются только для запроса данных (не для изменения).</dd>
+            <dd>GET so'rovlari brauzer tarixida qoladi.</dd>
+            <dd>GET so'rovlariga xatcho'p qo'yish mumkin</dd>
+            <dd>GET so'rovlarini keshlash mumkin</dd>
+            <li><h2>post metodi</h2></li>
+            <dd>POST resurs yaratish/yangilash uchun serverga ma'lumotlarni yuborish uchun ishlatiladi.</dd>
+            <dd>POST so'rovlari hech qachon keshda saqlanmaydi</dd>
+            <dd>POST so'rovlari brauzer tarixida saqlanmaydi</dd>
+            <dd>POST so'rovlarini xatcho'p qilib bo'lmaydi</dd>
+            <dd>POST so'rovlarida ma'lumotlar uzunligi bo'yicha cheklovlar yo'q.</dd>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h3>form atributlari</h3>
+        <table>
+            <tr>
+                <th>nomi</th>
+                <th>ta'rifi</th>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>ma'lumotni avtomatik to'ldirish</td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td>ushbu atribut mantiqiy atribut bo'lib, 
+                    u formada mavjud bo'lsa formadagi ma'lumotlar jo'natilishda tekshirilmaydi</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>Name atributi HTML elementining nomini bildiradi.
+                    Ushbu nom atributi JavaScript-dagi elementga murojaat qilish uchun ishlatilishi mumkin.
+                    <form> elementi uchun nom atributi ma'lumotlarni yuborishda havola sifatida ishlatiladi.</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

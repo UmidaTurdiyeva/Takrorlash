@@ -1,0 +1,30 @@
+
+
+.box{
+    border: 3px solid saddlebrown;
+    /* width: 500px; */
+    height: fit-content;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 20px;
+    font-size: 25px; 
+    width: fit-content;
+    margin: 10px auto;
+    text-align: center;
+}
+
+table th, td{
+    border: 3px solid red;
+    padding: 10px;
+    border-collapse: collapse;
+}
+table {
+    font-size: 20px;
+    margin: 3px auto;
+}
+table th{
+    background-color: red;
+}
+tr:nth-child(odd) {
+    background-color: rgb(246, 183, 183);
+  }

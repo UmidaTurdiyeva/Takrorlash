@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./inputAtribut.css">
+    <title>input atribut</title>
+</head>
+
+<body>
+
+    <div class="container" style="display: flex;">
+
+        <div class="sidenav">
+            <button class="tablinks" onclick="openInfo(event, 'value')" id="defaultOpen"> value</button>
+            <button class="tablinks" onclick="openInfo(event, 'readonly')">readonly </button>
+            <button class="tablinks" onclick="openInfo(event, 'disabled')">disabled </button>
+            <button class="tablinks" onclick="openInfo(event, 'size')"> size</button>
+            <button class="tablinks" onclick="openInfo(event, 'minMax')"> min va max</button>
+            <button class="tablinks" onclick="openInfo(event, 'multiple')"> multiple </button>
+            <button class="tablinks" onclick="openInfo(event, 'pattern')">pattern </button>
+            <button class="tablinks" onclick="openInfo(event, 'placeholder')">placeholder</button>
+            <button class="tablinks" onclick="openInfo(event, 'required')"> required </button>
+            <button class="tablinks" onclick="openInfo(event, 'list')">list</button>
+            <button class="tablinks" onclick="openInfo(event, 'autocomplete')">autocomplete</button>
+            <button class="tablinks" onclick="openInfo(event, 'others')"><a href="https://www.w3schools.com/tags/tag_input.asp">va boshqalar</a> </button>
+        </div>
+
+        <!-- value -->
+
+        <div id="value" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p>&lt; form &gt;</p>
+                    <p> &lt;label for="name" &gt; Ism : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="name" <b>value="Ali"</b> &gt; </p>
+                    <br>
+                    <p> &lt;label for="surname" &gt; Familiya : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="surname" <b>value="Aliyev"</b> &gt; </p>
+                    <p>&lt; /form &gt;</p>
+
+                    <p><b>value</b> atributi input ning boshlang'ich qiymatini ko'rsatadi.</p>
+
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form>
+                        <label for="name"> Ism : &nbsp;</label>
+                        <input type="text" id="name" value="Ali">
+                        <br><br>
+                        <label for="surname"> Familiya : &nbsp;</label>
+                        <input type="text" id="surname" value="Aliyev">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- readonly -->
+
+        <div id="readonly" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p>&lt; form action="url manzil" &gt;</p>
+                    <p> &lt;label for="country" &gt; mamlakat : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="country" value="O'zbekiston" <b>readonly</b>&gt; </p>
+                    <p>...</p>
+                    <p>&lt; input type="submit" value=" Jo'natish"</p>
+                    <p> &lt;/form &gt;</p>
+                </div>
+                <div class="info2">
+
+                    <h2>Natija:</h2>
+                    <label for="country"> mamlakat : &nbsp;</label>
+                    <input type="text" id="country" value="O'zbekiston" readonly>
+                    <br>
+                    <br>
+                    <input type="submit" value="Jo'natish">
+                    <br>
+                    <p> &nbsp; &nbsp;<b>readonly</b> atributi mantiqiy atribut bo'lib,
+                        u mavjud bo'lgan maydon faqatgina o'qish uchun mo'ljallangan uni o'zgartirib bo'lmaydi.
+                        Foydalanuvchi bu inputdagi matnni belgilashi va nusxa olishi mumkin.
+                        Formaning ma'lumotlari jo'natilayotganda readonly bor bo'lgan inputlar ning qiymati odattagiday
+                        ketadi. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- disabled -->
+
+        <div id="disabled" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p> &lt;label for="username" &gt; Username : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="username" &gt; </p>
+                    <br>
+                    <p> &lt;label for="Parol" &gt; Parol : &lt;/label &gt; </p>
+                    <p> &lt; input <b>type="password"</b> id="parol" disabled&gt; </p>
+                    <br>
+                    <p> <b>disabled</b> atributi mantiqiy atribut bo'lib, u mavjud bo'lgan maydon
+                        "o'chirib" qo'yiladi. Forma jo'natilganda u yozilgan maydondagi ma'lumot jo'natilmaydi.
+                        Undan biror shart bajarilmaguncha noaktiv maydon bo'lib turish uchun foydalanish mumkin</p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <label for="username"> Username : &nbsp;</label>
+                    <input type="text" id="username">
+                    <br><br>
+                    <label for="parol"> Parol : &nbsp;</label>
+                    <input type="username" id="parol" disabled>
+                </div>
+            </div>
+        </div>
+
+        <!-- size -->
+
+        <div id="size" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <p> &lt;label for="name" &gt; Ism : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="name" value="Ali" <b>size="50"</b> &gt; </p>
+                    <br>
+                    <p> &lt;label for="surname" &gt; Familiya : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="surname" value="Aliyev" <b>size="42"</b> &gt; </p>
+                    <p>&lt; /form &gt;</p>
+                    <br>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <br>
+                    <form>
+                        <label for="name"> Ism : &nbsp;</label>
+                        <input type="text" id="name" value="Ali" size="50">
+                        <br><br>
+                        <label for="surname"> Familiya : &nbsp;</label>
+                        <input type="text" id="surname" value="Aliyev" size="42">
+                    </form>
+                    <br><br>
+                    <p> <b>size</b> atributi inputning ko'rinib turadigan kengligini ko'rsatadi.
+                        Ya'ni inputda ko'riib turadigan charlar uzunligini bildiradi.
+                        Default holatda size ning qiymati 20 teng bo'ladi. </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- minMax -->
+
+
+        <div id="minMax" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                   
+                    <p> &lt;label  for="quantity" &gt; Quantity (between 1 and 5):&lt;/label &gt; </p>
+                    <p> &lt; input type="number" id="quantity" name="quantity" <b>min="1" max="5"</b> &gt; </p>
+                    <br>
+                    <p> min va max atributlari input uchun kiritish mumkin
+                        bo'lgan eng kam va eng ko'p bo'lgan qiymatlarni ko'rsatadi.
+                        <b>min</b> da kiritish mumkin bo'lgan qiymatning eng kami.
+                        <b>max</b> da kiritish mumkin bo'lgan qiymatning eng ko'pi.
+                    </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form action="/action_page.php">
+                    <label for="quantity">Quantity (between 1 and 5):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+                    <br>
+                    <!-- <input type="submit" value="Jo'natish"> -->
+                </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- multiple -->
+
+        <div id="multiple" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label <b>for="email"</b> &gt; Email : &lt;/label &gt; </p>
+                    <p> &lt; input type="email" id="email" <b>multiple</b> &gt; </p>
+                    <br>
+                    <p> <b>multiple</b>  atributi inputda bir nechta qiymatni tanlash  yokiy kiritish imkonini yaratadi.
+                        multiple  atributini  email  va  file  type dagi inputlar bilash ishlatish mumkin.</p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <label for="email"> Elektron pochta : &nbsp;</label>
+                    <input type="email" id="email" multiple>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!-- pattern -->
+
+        <div id="pattern" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <p> &lt;label for="tel" &gt; Telefon : &lt;/label &gt; </p>
+                    <p> &lt; input type="tel" id="tel" <b> pattern="9[0-9][0-9]{7}"</b> &gt; </p>
+                    <br>
+                    <p> pattern  atribuni inputga kiritilgan qiymat berilgan namuna asosida mi yoqmi shuni tekshiradi. 
+                        Bunda  forma ma'lumotlari 
+                        jo'natilayotganda  pattern   yozilgan inputlarning qiymati tekshiriladi.
+                        Eslatma. Kiritlgan qiymatni forma jo'natilayotganda tekshiradi. Ungacha xohlagan qiymat yozish mumkin. </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <label for="tel"> Telefon : &nbsp;</label>
+                    <input type="tel" id="tel" pattern="9[0-9][0-9]{7}" title="Namuna: 915556677">
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- placeholder -->
+
+        <div id="placeholder" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p>&lt; form &gt;</p>
+                    <p> &lt;label for="name" &gt; Ism : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="name" <b>placeholder="Ali"</b> &gt; </p>
+                    <br>
+                    <p> &lt;label for="surname" &gt; Familiya : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="surname" <b>placeholder="Aliyev" </b>  &gt; </p>
+                    <p>&lt; /form &gt;</p>
+
+                    <p><b>placeholder</b>  bu qiymat emas, shunchaki manabunaqa malumot kiritsa
+                         bo'ladi degan ma'noda yozilgan namuna (ishora).</p>
+
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form>
+                        <label for="name"> Ism : &nbsp;</label>
+                        <input type="text" id="name" placeholder="Ali" >
+                        <br><br>
+                        <label for="surname"> Familiya : &nbsp;</label>
+                        <input type="text" id="surname" placeholder="Aliyev">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- required -->
+
+        <div id="required" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p>&lt; form &gt;</p>
+                    <p> &lt;label for="name" &gt; Ism : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="name" placeholder="Ali" 
+                       <br> <b>required</b> &gt; </p>
+                    <p> &lt;label for="surname" &gt; Familiya : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="surname" placeholder="Aliyev" 
+                        <br>
+                        <b> required</b>  &gt; </p>
+                    <p>&lt; /form &gt;</p>
+
+                    <p><b>required</b> atributi yozilga maydon to'ldirilishi majburiy ekanligini bildiradi</p>
+
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form>
+                        <label for="name"> Ism : &nbsp;</label>
+                        <input type="text" id="name" placeholder="Ali" required>
+                        <br><br>
+                        <label for="surname"> Familiya : &nbsp;</label>
+                        <input type="text" id="surname" placeholder="Aliyev" required>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- list -->
+
+        <div id="list" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                        &lt;form action="/action_page.php">
+                        <br>
+                            &lt;input <b>list="browsers"</b> name="browser">
+                        <br>
+                            &lt;datalist id="browsers">
+                            <br>
+                                &lt;option value="Internet Explorer">
+                            <br>
+                                &lt;option value="Firefox">
+                            <br>
+                                &lt;option value="Chrome">
+                            <br>
+                                &lt;option value="Opera">
+                            <br>
+                                &lt;option value="Safari">
+                        <br>
+                            &lt;/datalist>
+                        <br>
+                            &lt;input type="submit">
+                    <br>
+                        &lt;/form>
+                    <p><b>list</b>  atributi inputga kiritilishi mumkin bo'lgan  &lt;datalist&gt; 
+                          elementiga ko'rsatgich bo'ladi. Ya'ni shu datalist ni ko'rsatib bog'lab turadi.
+                    </p>
+                </div>
+                <div class="info2">
+                    <form action="/action_page.php">
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- autocomplete-->
+
+        <div id="autocomplete" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <p>&lt; form &gt; <b>autocomplete="on"</b> </p>
+                    <p> &lt;label for="name" &gt; Ism : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="name" placeholder="Ali" 
+                       <br> required &gt; </p>
+                    <p> &lt;label for="surname" &gt; Familiya : &lt;/label &gt; </p>
+                    <p> &lt; input type="text" id="surname" placeholder="Aliyev" 
+                        <br>
+                         required  &gt; </p>
+                    <p>&lt; /form &gt;</p>
+
+                    <p><b>required</b> atributi yozilga maydon to'ldirilishi majburiy ekanligini bildiradi</p>
+
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form  autocomplete="on">
+                        <label for="name"> Ism : &nbsp;</label>
+                        <input type="text" id="name" placeholder="Ali" required>
+                        <br><br>
+                        <label for="surname"> Familiya : &nbsp;</label>
+                        <input type="text" id="surname" placeholder="Aliyev" required>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- others-->
+
+        <div id="others" class="information">
+            <div style="display: flex;">
+                <div class="info1">
+                    <br>
+                    <br>
+                    <!-- <p> &lt;label for="myFile" &gt; faylni tanlang : &lt;/label &gt; </p> -->
+                    <p> &lt; <b>input type="color"</b> &gt; </p>
+                    <p> &lt; <b>input type="image"</b> alt="Submit" width="48" height="48" &gt; </p>
+                    <br>
+                    <p>rang tanlash hamda rasmli jo'natish tugmasi </p>
+                </div>
+                <div class="info2">
+                    <br>
+                    <br>
+                    <h2>Natija:</h2>
+                    <form action="/action_page.php">
+                        <label for="myColor"> rang tanlang: &nbsp;</label>
+                        <input type="color" id="myColor">
+                        <br>
+                        <!-- <label for="myImage"> rasm tanlang: &nbsp;</label>
+                        <br> -->
+                        <input type="image" src="./imgs/yuborish.PNG" alt="Submit" width="48" height="48">
+                        <br>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script>
+        function openInfo(evt, info) {
+            let i, information, tablinks;
+
+            information = document.getElementsByClassName("information");
+            for (i = 0; i < information.length; i++) {
+                information[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(info).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+
+
+.reja{
+    margin: 50px auto;
+    border: 3px solid gray;
+    box-shadow: 15px 12px 10px gray;
+    width: 50vw;
+    height: fit-content;
+    padding: 15px;
+    font-size: 30px;
+}
+.reja ol li a{
+    text-decoration: none;
+}
+.imgForms img{
+    margin: 3px;
+}
+.img{
+    margin: 10px auto;
+    width: 90vw;
+    height: fit-content;
+    padding: 15px;
+
+}
