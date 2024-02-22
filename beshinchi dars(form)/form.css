@@ -1,0 +1,63 @@
+body{
+    padding: 20px;
+}
+.form1 form{
+    border-radius: 50px;
+    background-color: white;
+    padding: 50px;
+}
+.form1 form input , textarea{
+    background-color: #e9eff7;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    width: 90%;
+    font-size: 15px;
+    margin: 5px auto;
+}
+.form1 form fieldset legend h1{
+    color: #7b7879;
+    font-family: sans-serif;
+}
+.form1 form fieldset{
+    border: #e9eff7;
+}
+
+.form1{
+    width: fit-content;
+    height: fit-content;
+    background-color: #ff9d6f;
+    padding: 30px;
+    border-radius: 50px;
+}
+.form1 form fieldset button{
+    background-color: #ff9d6f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    width: 100%;
+    font-size: 15px;
+    border-bottom: 4px solid #e18768 ;
+}
+
+/* forma 2 */
+
+.form2{
+    width: fit-content;
+    height: fit-content;
+    background-color: #065669;
+    padding: 10px 30px 30px 30px;
+    color: white;
+    border: 2px solid white;
+    margin: 15px auto;
+}
+.form2 h1{
+    margin: 20px 200px;
+}
+.form2 .tugma{
+    background-color: #d94c04;
+    color: white;
+    padding: 3px 40px;
+    border: none;
+}

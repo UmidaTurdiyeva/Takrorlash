@@ -5,10 +5,31 @@
 
 .anketa{
     width: 80vw;
-    height: 100vh;
+    height: fit-content;
     border: 1px solid #7272e7;
     margin: 0px auto;
     padding: 10px;
+}
+.box{
+    display: flex;
+}
+.box div{
+    box-sizing: border-box;
+    margin: 20px 10px;
+    padding: 30px;
+    width: 50%;
+}
+.box input{
+    margin: 10px;
+    padding: 8px 16px;
+}
+.tugma{
+    float: right;
+    background-color: #7272e7;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 25px;
 }
 header{
     width: 80vw;
@@ -20,19 +41,3 @@ header{
     border: 1px solid #7272e7;
 }
 
-.shaxsiy{
-    width: 30vw;
-
-
-}
-.shaxsiy input{
-    margin: 10px;
-    padding: 4px;
-}
-.shaxsiy div{
-    display: inline;
-}
-.shaxsiy .foto{ 
-    width: 50%;
-    border: 2px solid black;
-}

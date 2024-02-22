@@ -24,7 +24,7 @@
             <button class="tablinks" onclick="openInfo(event, 'placeholder')">placeholder</button>
             <button class="tablinks" onclick="openInfo(event, 'required')"> required </button>
             <button class="tablinks" onclick="openInfo(event, 'list')">list</button>
-            <button class="tablinks" onclick="openInfo(event, 'autocomplete')">autocomplete</button>
+            <!-- <button class="tablinks" onclick="openInfo(event, 'autocomplete')">autocomplete</button> -->
             <button class="tablinks" onclick="openInfo(event, 'others')"><a href="https://www.w3schools.com/tags/tag_input.asp">va boshqalar</a> </button>
         </div>
 
@@ -133,7 +133,6 @@
                 </div>
                 <div class="info2">
                     <br>
-                    <br>
                     <h2>Natija:</h2>
                     <br>
                     <form>
@@ -143,7 +142,7 @@
                         <label for="surname"> Familiya : &nbsp;</label>
                         <input type="text" id="surname" value="Aliyev" size="42">
                     </form>
-                    <br><br>
+                    <br>
                     <p> <b>size</b> atributi inputning ko'rinib turadigan kengligini ko'rsatadi.
                         Ya'ni inputda ko'riib turadigan charlar uzunligini bildiradi.
                         Default holatda size ning qiymati 20 teng bo'ladi. </p>
@@ -353,7 +352,7 @@
         <div id="autocomplete" class="information">
             <div style="display: flex;">
                 <div class="info1">
-                    <p>&lt; form &gt; <b>autocomplete="on"</b> </p>
+                    <p>&lt; form  <b>autocomplete="on"&gt;</b> </p>
                     <p> &lt;label for="name" &gt; Ism : &lt;/label &gt; </p>
                     <p> &lt; input type="text" id="name" placeholder="Ali" 
                        <br> required &gt; </p>
@@ -363,7 +362,7 @@
                          required  &gt; </p>
                     <p>&lt; /form &gt;</p>
 
-                    <p><b>required</b> atributi yozilga maydon to'ldirilishi majburiy ekanligini bildiradi</p>
+                    <p><b>autocomplete</b> atributi yozilga maydon avtomatik to'ldiriladi</p>
 
                 </div>
                 <div class="info2">

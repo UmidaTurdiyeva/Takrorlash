@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,21 @@
     <link rel="stylesheet" href="./style.css">
     <title>Anketa</title>
 </head>
+
 <body>
     <header>
-        <h1>Anketa</h1>
+        <h1>Na'muna</h1>
     </header>
 
     <div class="anketa">
-        <form action="#" method="post">
-            <fieldset class="shaxsiy">
+        <form action="#" method="post" class="box">
+            <div>
+            <fieldset >
                 <legend>Shaxsiy ma'lumotlat</legend>
-                <div>
                     <br>
-                    <label for="fname">Ism</label> 
+                    <label for="fname">Ism</label>
                     <br>
-                    <input type="text" id="fname" name="fname" value="Ali">
+                    <input type="text" id="fname" name="fname"  value="Ali">
                     <br>
                     <label for="lname">Familiya</label>
                     <br>
@@ -28,43 +30,64 @@
                     <br>
                     <label for="otchestva"> Sharif</label>
                     <br>
-                    <input type="text" name="otchestva" id="otchestva">
+                    <input type="text" name="otchestva" id="otchestva" placeholder="Alijon o'g'li">
                     <br>
                     <label for="bday">Tug'ilgan sana</label>
                     <br>
-                    <input type="datetime" name="bday" id="bday" >
+                    <input type="date" name="bday" id="bday">
                     <br>
                     <label for="pasSeriya">Pasport seriya</label>
                     <br>
-                    <input type="text" name="pasSeriya">
+                    <input type="text" name="pasSeriya" pattern="[A-Z]{2}[0-9]{7}" placeholder="AC0000000">
                     <br>
-                    <label for="telNumber">Telefon raqam</label>
-                    <br>
-                    <input type="tel" name="telNumber" id="telNumber">
-                    <br>
-                    <label for="email">Elektron pochta</label>
-                    <br>
-                    <input type="email" name="email" id="email">
-                    <br>
-                    <!-- <label for="gender">Gender:</label> -->
                     <input type="radio" name="jinsi" id="gender">
                     <label for="gender">Ayol</label>
                     <input type="radio" name="jinsi" id="gender">
                     <label for="gender">Erkak</label>
                     <br>
-                    <textarea name="xabar" rows="10" cols="30">qo'shimcha ma'lumotlar</textarea>  
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Qo'shimcha ma'lumotlar</legend>
+                    <br>
+                    <label for="telNumber">Telefon raqam</label>
+                <br>
+                <input type="tel" name="telNumber" id="telNumber" placeholder="+998 000 00 00" pattern="9[0-9][0-9]{7}">
+
+                <label for="degree">Ma'lumoti: &nbsp;</label>
+                <select name="degree" id="degree" >
+                    <option value="professor">professor</option>
+                    <option value="doktorant">doktorant</option>
+                    <option value="magistrant">magistrant</option>
+                    <option value="bakalavr">bakalavr</option>
+                    <option value="o'rta maxsus" selected>o'rta maxsus</option>
+                    <option value="boshlang'ich">boshlang'ich</option>
+                    <option value="ma'lumotsiz">ma'lumotsiz</option>
+                </select>
+                <br>
+                <label for="email">Elektron pochta</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="example@mail.com">
+                <!-- <br><br> -->
+                <!-- <label for="gender">Gender:</label> -->
+
+               
+                <br>
+                <br>
+                <textarea name="xabar" rows="9" cols="60">qo'shimcha ma'lumotlar</textarea>
+                <br>
+                <br>
+               
+                <input class="tugma" type="reset" value="reset">
+                <input class="tugma" type="submit" value="submit">
                 
-                </div>
-                <div>
-                </div>
-            </fieldset>
-            <div style="display: inline;">
-                <!-- <input type="image" src="./imgs/placeholder_200.png" alt="foto"> -->
-                <!-- <span>foto</span> -->
+                </fieldset>
             </div>
 
         </form>
     </div>
-    
+
 </body>
+
 </html>

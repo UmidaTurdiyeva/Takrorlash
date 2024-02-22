@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>form</title>
+</head>
+
+<body>
+
+    <div style="display: flex;">
+        <div class="form1">
+            <form action="#">
+                <fieldset>
+                    <legend>
+                        <h1>Написать нам</h1>
+                    </legend>
+                    <input type="text" name="username" id="username" placeholder="Username" size="40">
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <br>
+                    <textarea name="messsage" id="" cols="30" rows="10" placeholder="Сообщение..."></textarea>
+                    <br><br>
+                    <button type="submit">Отправить</button>
+                    <!-- <input type="submit" value="Отправить" class="button"> -->
+                </fieldset>
+            </form>
+
+        </div>
+        <div class="form2">
+            <h1>Application Form</h1>
+            <form action="#">
+                <label for="fname"> First Name: &nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="fname">
+
+                <input style="float: right;" type="text" id="lname">
+                <label style="float: right;" for="lname"> Last Name: &nbsp;</label>
+
+                <br><br>
+
+                <label for="birht"> Date of birth: &nbsp;</label>
+                <input type="date" name="birht" id="birht">
+
+                <input style="float: right;" type="number" name="age" id="age">
+                <label style="float: right;" for="age">Age: &nbsp; </label>
+
+                <br> <br>
+
+                <label for="gender">Gender: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <input style="float: right;" type="email" name="email" id="email" placeholder="Enter email address">
+                <label style="float: right;" for="email">Email Address: &nbsp;</label>
+
+                <br><br>
+
+                <label for="available">Positions Available: &nbsp;</label>
+                <input type="radio" name="available" id="junior">
+                <label for="junior">Junior Developer</label>
+                <input type="radio" name="available" id="mid-level">
+                <label for="mid-level">Mid-level Developer</label>
+                <input type="radio" name="available" id="senior">
+                <label for="senior">Senior Developer</label>
+
+                <br><br>
+
+                <label for="">Programming Languages: &nbsp;</label>
+                <input type="checkbox" name="java" id="java">
+                <label for="java">Java</label>
+                <input type="checkbox" name="javaScript" id="javaScript">
+                <label for="javaScript">JavaScript</label>
+                <input type="checkbox" name="python" id="python">
+                <label for="python">Python</label>
+
+                <br><br>
+
+                <label for="password">Password: &nbsp;</label>
+                <input type="password" name="password" id="password">
+
+                <label for="conPassword">Confirm Password: &nbsp;</label>
+                <input type="password" name="conPassword" id="conPassword">
+
+                <br><br><br>
+                <div style="margin: 2px 200px;">
+                    <input type="submit" class="tugma" value="Submit">
+                    <input type="reset" class="tugma" value="Reset">
+                </div>
+
+
+
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

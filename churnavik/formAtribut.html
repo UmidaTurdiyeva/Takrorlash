@@ -82,7 +82,6 @@ ma'lumotlarni o'z ichiga oladi va so'ralgan tarkibni ham o'z ichiga olishi mumki
             <dd>GET ma'lum bir manbadan ma'lumotlarni so'rash uchun ishlatiladi.</dd>
             <dd>GET so'rovlari hech qachon nozik ma'lumotlar bilan ishlashda ishlatilmasligi kerak.</dd>
             <dd>GET so'rovlarida uzunlik cheklovlari mavjud. (2048 ta belgi)</dd>
-            <dd>Запросы GET используются только для запроса данных (не для изменения).</dd>
             <dd>GET so'rovlari brauzer tarixida qoladi.</dd>
             <dd>GET so'rovlariga xatcho'p qo'yish mumkin</dd>
             <dd>GET so'rovlarini keshlash mumkin</dd>
@@ -103,8 +102,8 @@ ma'lumotlarni o'z ichiga oladi va so'ralgan tarkibni ham o'z ichiga olishi mumki
                 <th>ta'rifi</th>
             </tr>
             <tr>
-                <td>autocomplete</td>
-                <td>ma'lumotni avtomatik to'ldirish</td>
+                <td>autocomplete="on" // ="of"</td>
+                <td>  ma'lumotni avtomatik to'ldirish (default holatda autocomplete="on" turadi)</td>
             </tr>
             <tr>
                 <td>novalidate</td>
@@ -114,8 +113,9 @@ ma'lumotlarni o'z ichiga oladi va so'ralgan tarkibni ham o'z ichiga olishi mumki
             <tr>
                 <td>name</td>
                 <td>Name atributi HTML elementining nomini bildiradi.
-                    Ushbu nom atributi JavaScript-dagi elementga murojaat qilish uchun ishlatilishi mumkin.
-                    <form> elementi uchun nom atributi ma'lumotlarni yuborishda havola sifatida ishlatiladi.</td>
+                    Ushbu name atributi JavaScript-dagi elementga murojaat qilish uchun ishlatilishi mumkin.
+                    <br>
+                    &lt;form &gt; elementi uchun name atributi ma'lumotlarni yuborishda havola sifatida ishlatiladi.</td>
             </tr>
         </table>
     </div>
